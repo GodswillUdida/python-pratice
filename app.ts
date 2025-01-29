@@ -1,4 +1,4 @@
-import http from "http"
+import http from "https"
 
 const server = http.createServer((_req: any,res: any)=> {
     res.writeHead(200,{'Content-Type':'text/plain'});
