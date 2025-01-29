@@ -1,0 +1,331 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(248, 247, 247);
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+
+    .bName {
+        color: white;
+    }
+
+    .Button {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .circle {
+        background-color: white;
+        color: black;
+    }
+
+    .follow {
+        color: black;
+    }
+
+    .bigText {
+        color: black;
+    }
+
+    .textHolder {
+        background-color: rgb(221, 221, 221);
+    }
+
+    .sMedia {
+        color: black;
+    }
+
+    .navs {
+        color: black;
+    }
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    margin: 10px;
+    width: 95%;
+    height: 100px;
+    /* margin-top: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bName {
+    color: rgb(71, 4, 68);
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.navHolder {
+    width: 60%;
+    height: 60px;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navs {
+    color: purple;
+    font-size: larger;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    &:hover {
+        transform: scale(1.10);
+        transition: all 0.3s ease-in-out;
+        /* text-decoration: underline; */
+    }
+}
+
+.Button {
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all 350ms;
+
+    &:hover {
+        background-color: purple;
+        color: white;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+}
+
+
+
+.bodyHolder {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 490px;
+}
+
+.bigText {
+    width: 95%;
+    font-size: 80px;
+    color: rgb(242, 237, 247);
+}
+
+.imageholder {
+    object-fit: contain;
+    margin-left: 50px;
+}
+
+.img {
+    width: 500px;
+    height: 490px;
+    border-radius: 5%;
+}
+
+.textHolder {
+    background-color: rgb(78, 90, 61);
+    padding-left: 17px;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.follow {
+    font-size: 45px;
+    font-family: fantasy;
+    margin-top: 20px;
+    color: rgb(207, 177, 236);
+}
+
+.circle {
+    margin: 0px 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.smHolder {
+    padding: 10px 30px;
+    gap: 10px 0px;
+    margin-top: 10px 0px;
+    justify-content: space-around;
+}
+
+.sMedia {
+    width: 20%;
+    color: rgba(233, 230, 225, 0.808);
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.register {
+    text-decoration: none;
+    color: bisque;
+}
+
+@media (max-width: 320px) {
+    .navHolder {
+        display: none;
+    }
+
+    .bName {
+        font-size: 35px;
+    }
+
+    .circle {
+        padding: 10px 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .Button {
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .bodyHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px 0px;
+    }
+
+    .bigText {
+        width: 99%;
+        font-size: 40px;
+    }
+
+    .img {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 95%;
+    }
+
+    .bName {
+        font-size: 40px;
+    }
+
+    .navHolder {
+        background-color: blueviolet;
+        /* font-size: ; */
+    }
+}
+
+.menuIcon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .menuIcon {
+        display: block;
+    }
+
+    .navHolder {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        height: 250px;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        margin-top: 30px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+    }
+
+    .navHolder.show {
+        display: flex;
+    }
+
+    .navs {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header {
+        /* width: 95%; */
+        display: flex;
+        justify-content: space-between;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bName {
+        font-size: 25px;
+    }
+
+    .Button {
+        display: none;
+    }
+
+    .textHolder {
+        width: 80%;
+    }
+
+    .bodyHolder {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .bName {
+        font-size: 35px;
+    }
+
+    .header {
+        margin: 0px;
+    }
+
+}

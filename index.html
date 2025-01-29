@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udis GYM</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="bName">
+                Udis GYM
+            </div>
+
+            <div class="navHolder">
+                <a href="/" class="navs">Home</a>
+                <a href="../Pages/about.html" class="navs">About</a>
+                <a href="../Pages/contact.html" class="navs">Contact us</a>
+                <a href="../Pages/pricing.html" class="navs">Pricing</a>
+            </div>
+
+            <!-- onclick="clickButton()" -->
+            
+            <div class="buttonHolder">
+                <a  href="./Auth/register.html" class="register">
+                    <button class="Button"
+                    >Register</button>
+                </a>
+            </div>
+            
+            <div class="circle" id="modeText" onclick="toggleTheme()">Dark</div>
+            <div class="menuIcon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="landingPage">
+            <div class="bodyHolder">
+                <div class="textHolder">
+                    <h1 class="bigText">
+                        If you can dream it, we can create it...
+                    </h1>
+                    <div class="followHolder">
+                        <div class="follow">Follow us on</div>
+                        <ul class="smHolder">
+                            <li class="sMedia" id="Instagram">Instagram</li>
+                            <li class="sMedia" id="Facebook">Facebook</li>
+                            <li class="sMedia" id="x">X</li>
+                            <li class="sMedia" id="Tiktok">Tiktok</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="imageholder">
+                    <img class="img" loading="lazy" src="./images/11c097c1-59cc-4eb2-9077-9b948b4f046e.jpeg" alt="Gym Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
