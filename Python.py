@@ -4,5 +4,5 @@ name_User = "godswill"
 
 user_Surname = "Udida"
 
-print(name_User.index("o"))
+print(name_User.count("3"))
 # (user_Surname
