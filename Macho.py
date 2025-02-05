@@ -4,7 +4,7 @@
 
 #     print()
 #     name = input("what is your name ? ")
-#     print(name)
+#     # print(name)
 
 #     while not name.strip():
 #         print("Invalid input. Please provide a name")
@@ -15,7 +15,6 @@
 #                 break
 #             except ValueError:
 #                 print("Invalid input, please provide a valid name")
-#         # name = input("What is your name ? ")
 
 #     print(f"Hello {name}!, Welcome to UDIS Console ")
 #     while True:
@@ -25,7 +24,7 @@
 #         except ValueError:
 #             print("Invalid input. please enter a valid age.")
 
-#     print(f"Okay {name}, you are {age} years old. Is that correct?. Reply wiith Y/N")
+#     print(f"Okay {name}, you are {age} years old. Is that correct?. Reply wiith Y for Yes and N for NO")
 #     reply = input().strip().lower()
 
 #     if reply == "y":
@@ -65,8 +64,11 @@
 #     reply = input().strip().lower()
 
 #     if reply == "y":
+        
 #         # Add the student to the global list
-#         enrolled_students.append({"name": name, "age": age})
+#         details = {"name": name, "age": age}
+        
+#         enrolled_students.append(details)
 #         print("Congrats, you have been successfully enrolled!")
 #     elif reply == "n":
 #         print("Okay, please restart the enrollment process.")

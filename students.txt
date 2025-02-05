@@ -1,2 +1,2 @@
-Name,Age
-godswill,93
+Name Age
+Sma,33
