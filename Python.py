@@ -17,8 +17,8 @@ def get_float(prompt):
     
 
 name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-height = float(input("Enter your height in meters: "))
+age = get_integer("Enter your age: ")
+height = get_float("Enter your height in meters: ")
 is_student = input("Are you a student? (yes/no): ").strip().lower() == "yes"
 
 print("\n--- User Information ---")  
